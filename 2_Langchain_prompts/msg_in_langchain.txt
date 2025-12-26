@@ -1,0 +1,21 @@
+somehow we saved the chat history in the chatbot but after exit we dont know which msg is of whom ?
+so there are msgs to solve this problem
+there are 3 kind of msgs in langchain,
+- system msg
+- human msg
+- ai msg
+we are a new file msg.py
+
+
+                     model(Invoke)
+                        |
+                    |         |
+    single message          list of messages
+  (single turn stand        (multi-turn convo)
+  alone queries)                   |
+        |                          |
+  |           |             |               |
+static    dynamic        static msg         Dynamic msg
+msg         msg       (system msg,human        (?)=> chatprompttemplate
+         (prompt         msg,ai msg)
+         template)             

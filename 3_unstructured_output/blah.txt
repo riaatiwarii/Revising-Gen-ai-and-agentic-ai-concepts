@@ -1,0 +1,21 @@
+// when we are using different languages in our project, like Python and JavaScript, and we want to ensure that the data structures we use are consistent across these languages. By defining a JSON Schema, 
+we can validate that the data being exchanged adheres 
+to the expected format, regardless of the programming language used 
+to process it.
+
+WHEN TO USE WHAT ?
+
+Use TypeDict if:
+- only need type hints
+- dont need validation
+- trust the llm to return correct data 
+
+Use Pydantic if :
+- need data validation
+- need default values if llm misses fields 
+- want automatic type conversion( "100"->100)
+
+Use JSON schema if:
+-dont want to import extra python libraries
+- need validation but dont need python objects
+- define structure in a standard JSON format
