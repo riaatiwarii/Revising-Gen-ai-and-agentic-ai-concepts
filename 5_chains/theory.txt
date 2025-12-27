@@ -1,0 +1,32 @@
+sequential chain
+parallel chain
+conditional chain
+
+in sequential_chain.py
+  topic -> LLM -> detailed report -> LLM -> summarize 
+  two times llm call 
+
+in parallel_chain.py
+  lets say we take a document and we want to generate notes and quiz from it
+  we will show a combination of them to user 
+                   text
+                     |
+              |                |
+         model 1          model 2 
+         (notes)           (quiz)
+            |                 |
+                    |
+                model 3 (mergre) -> output
+
+in conditional_chain.py
+feedback (analysse) -> pos, neg
+pos -> feedback form or rating form
+neg -> email, customer support 
+
+                  FEEDBACK
+                     |
+                    model 
+              |                |
+         positive           negative
+            |                 |
+          model              model 
