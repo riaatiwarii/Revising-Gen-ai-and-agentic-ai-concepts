@@ -1,0 +1,13 @@
+Output parser - help convert raw LLM responses into structured formats like
+JSON, CSV, Pydantic models, and more 
+-str output parser
+-json output parser
+-structured output parser
+-Pydantic output parser
+most used 
+
+StrOutputParser
+-used to parse the output of LLM and return it as a plan string.
+
+JSONOutputParser
+- LLM -> json
