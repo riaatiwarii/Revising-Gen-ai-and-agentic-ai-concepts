@@ -11,3 +11,11 @@ StrOutputParser
 
 JSONOutputParser
 - LLM -> json
+- it dose not force a schemea
+
+StructuredOutputParser
+- helps extracts structured JSON data from LLM responses based on predefined field schemas.
+- now we dont use it, it is deprecated and we use pydanticoutputparser instead of this
+
+PydanticOutputParser
+- structure output parser that use pydantic model to enforce schema validation 

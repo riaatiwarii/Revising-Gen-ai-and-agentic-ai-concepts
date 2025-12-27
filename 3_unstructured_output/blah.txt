@@ -19,3 +19,9 @@ Use JSON schema if:
 -dont want to import extra python libraries
 - need validation but dont need python objects
 - define structure in a standard JSON format
+
+when we call with_structured_output(method)
+- method
+  - json mode (output in json format)
+  - function calling (function call agents)
+  

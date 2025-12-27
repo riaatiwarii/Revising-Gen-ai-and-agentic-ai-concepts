@@ -24,11 +24,16 @@ template = PromptTemplate(
   partial_variables={"fomat_instructions": parser.get_format_instructions()}
 )
 
-prompt = template.format()
+# prompt = template.format()
 
-result = model.invoke(prompt)
+# result = model.invoke(prompt)
 
-final_result = parser.parse(result.content)
+# final_result = parser.parse(result.content)
+
+# we can write above three lines in a single line using chaining
+
+chain = template | model | parser
+final_result = chain.invoke({})
 
 print(final_result)
 print(type(final_result))
